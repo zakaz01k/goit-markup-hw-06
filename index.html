@@ -57,7 +57,7 @@
 					<div data-modal class="backdrop is-hidden">
 						<div class="modal">
 							<h1 class="form-title">Leave your contacts and we will call you back</h1>
-							<form class="form js-speaker-form" autocomplete="on">
+							<form class="form" autocomplete="on">
 								<div class="form-field">
 									<label class="form-label" for="name">Name</label>
 
@@ -454,15 +454,5 @@
 
 		<!-- проблема с иконкой в футере сбилось позиционирование -->
 		<script src="./modal.js"></script>
-
-		<script>
-			(() => {
-				document.querySelector(".js-speaker-form").addEventListener("submit", e => {
-					e.preventDefault();
-
-					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-				});
-			})();
-		</script>
 	</body>
 </html>
