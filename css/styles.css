@@ -751,6 +751,13 @@ footer {
 	display: flex;
 }
 
+.form-footer > input[type="email"] {
+	background-color: var(--title-text-color);
+	color: var(--title-hero-color);
+	outline: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 .subscribe-footer > h2 {
 	display: inline-block;
 
